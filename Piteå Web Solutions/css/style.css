@@ -1,0 +1,258 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(https://static.vecteezy.com/system/resources/previews/006/852/804/non_2x/abstract-blue-background-simple-design-for-your-website-free-vector.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    height: 65px;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+header h1{
+    position: absolute;
+    left: 20px;
+    color: white;
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+header ul{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgb(52, 85, 235);
+}
+
+header ul a{
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1rem;
+    margin: 0 15px;
+}
+
+header ul a:hover {
+    color: rgb(247, 114, 32);
+    transition: all 0.3s ease;
+}
+
+header button{
+    position: absolute;
+    right: 150px;
+    font-size: 1.2rem;
+    background-color: rgb(247, 114, 32);
+    border: 0px;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+header button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header button:hover{
+    background-color: rgb(52, 85, 235);
+    transition: 0.2s ease-in;
+}
+
+header button a:hover{
+    color: rgb(247, 114, 32);
+}
+
+.info{
+    position: absolute;
+    top: 35%;
+    left: 40px;
+    width: 50%;
+}
+
+.info h1{
+    color: white;
+    font-size: 4rem;
+}
+
+.info p{
+    margin-left: 20px;
+    margin-top: -50px;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.img{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+
+    background: url(../assets/data-server.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 40%;
+    height: 80%;
+}
+
+.contact-a{
+    display: none;
+}
+
+
+.img{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+
+    background: url(../assets/data-server.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 40%;
+    height: 80%;
+}
+
+.contact-a{
+    display: none;
+}
+
+.hidden-menu {
+    display: none;
+    position: absolute;
+    top: 65px; 
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); 
+    text-align: center;
+    z-index: 9999;
+    padding: 10px 0;
+}
+
+.hidden-menu a {
+    display: block;
+    padding: 15px 0;
+    color: white;
+    text-decoration: none;
+    padding-left: 50px;
+    text-align: left;
+    font-size: 1.2rem; 
+    font-weight: 500; 
+    letter-spacing: 0.5px;
+}
+
+.hidden-menu a:hover {
+    background-color: rgb(247, 114, 32);
+    border-bottom: 2px white solid;
+    transition: 0.3s ease;
+}
+
+.burger {
+    position: absolute;
+    right: 30px;
+    display: none;
+    cursor: pointer;
+    z-index: 10000;
+}
+  
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+  
+.change .bar2 {
+    opacity: 0;
+}
+  
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+@media screen and (max-width: 1200px){
+    .img{
+        display: none;
+    }
+
+    header h1{
+        display: none;
+    }
+
+    .info{
+        left: 0;
+        width: 100%;
+        top: 25%;
+        text-align: center;
+    }
+
+    header ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header ul a{
+        padding: 0 20px;
+    }
+
+    header button{
+        display: none;
+    }
+
+    .contact-a{
+        display: block;
+    }
+
+}
+
+
+@media screen and (max-width: 610px){
+ 
+    header{
+        width: 100%;
+        background-color: rgb(52, 85, 235);
+    }
+
+    header h1{
+        font-size: 1.5rem;
+        display: block;
+        left: 0;
+    }
+
+    header ul{
+        display: none;
+    }
+
+    .burger{
+        display: inline-block;
+    }
+
+}
